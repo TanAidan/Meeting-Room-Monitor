@@ -1,0 +1,8 @@
+{
+    "title": "Meeting-Room-Monitor",
+    "identifier": "com.yourcompany.wizardEVAP.MeetingRoomMonitor",
+    "orientation": "auto",
+    "versioncode": 1,
+    "versionname": "1.0",
+    "stage": "test"
+}
