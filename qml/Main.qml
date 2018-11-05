@@ -1,5 +1,7 @@
 import VPlayApps 1.0
 import QtQuick 2.0
+import QtQuick.Controls 2.4
+
 
 App {
     width: 480
@@ -36,6 +38,7 @@ App {
                 width: 178
                 height: 34
                 text: qsTr("Name of Meeting Creator")
+                verticalAlignment: Text.AlignVCenter
                 horizontalAlignment: Text.AlignHCenter
                 font.pixelSize: 16
             }
@@ -46,9 +49,22 @@ App {
                 y: 48
                 width: 178
                 height: 30
-                text: qsTr("Time Range")
-                font.pixelSize: 12
+                text: qsTr("ex: 8:00-9:00")
+                verticalAlignment: Text.AlignVCenter
+                horizontalAlignment: Text.AlignHCenter
+                font.pixelSize: 18
+            }
+
+            AppButton {
+                id: appButton
+                x: 230
+                y: 35
+                minimumHeight: 16
+                minimumWidth: 16
+                onClicked: backgroundColor = "lawngreen"
             }
         }
+
+
     }
 }
