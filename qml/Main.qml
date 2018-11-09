@@ -5,12 +5,12 @@ import VPlay 2.0
 
     App {
         width: 480
-        height: 907
+        height: 950
 
         Page {
             id: page
             width: 480
-            height: 907
+            height: 950
 
 
             Text {
@@ -42,6 +42,21 @@ import VPlay 2.0
                 height: 93
                 color: "#ffffff"
                 border.color: "#1fbf17"
+                 MouseArea {
+                     anchors.fill:parent
+                     onPressed:{ customDialog.open()}
+
+                 }
+                 Dialog {
+                   x:0
+                   y:0
+                   width: 412
+                   height: 93
+                   id: customDialog
+                   title: "Information"
+                   onAccepted: close()
+
+             }
 
                 Text {
                     id: text2
@@ -63,6 +78,7 @@ import VPlay 2.0
                         height: 28
                     }
                 }
+
 
                 Text {
                     id: text3
@@ -134,7 +150,7 @@ import VPlay 2.0
                     y: -27
                     width: 480
                     height: 690
-                    model: 20
+                    model: 24
                     spacing: 25
                     delegate:
 
@@ -174,6 +190,7 @@ import VPlay 2.0
                 height: 41
                 color: "#ffffff"
             }
-        }
 
+
+}
 }
