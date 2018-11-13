@@ -154,7 +154,7 @@ import VPlay 2.0
                     spacing: 25
                     delegate:
 
-                        Row {
+                        SimpleRow {
                             id: row1
 
                             Rectangle {
@@ -164,19 +164,21 @@ import VPlay 2.0
                             }
 
                             Text {
-                                text: + (index + 1) + "am"
+                                x:10
+                                y: parent.y
+                                text: + (+index + 1) + "am"
                                 anchors.verticalCenter: parent.verticalCenter
                                 font.family: "Times New Roman"
                                  font.pointSize: 10.5
 
                             }
-                            LineItem {
+                           /* LineItem {
                                   color: "black"
                                   points: [
                                     {"x":-30, "y":0},
                                       {"x":385, "y":0}
                                   ]
-                            }
+                            }*/
                     }
                 }
 
