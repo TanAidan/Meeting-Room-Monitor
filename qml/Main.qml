@@ -47,6 +47,7 @@ import VPlay 2.0
                      onPressed:{ customDialog.open()}
 
                  }
+               // function popUp(name){
                  Dialog {
                    x:0
                    y:0
@@ -56,8 +57,8 @@ import VPlay 2.0
                    title: "Information"
                    onAccepted: close()
 
-             }
-
+            // }
+        }
                 Text {
                     id: text2
                     x: 45
@@ -151,22 +152,27 @@ import VPlay 2.0
                     width: 480
                     height: 690
                     model: 24
-                    spacing: 25
+                    spacing:0
                     delegate:
 
                         SimpleRow {
-                            id: row1
-
-                            Rectangle {
-                                width: 40
-                                height: 40
-                                color: colorCode
+                            property bool clicked: false
+                            onSelected:{
+                                console.log(clicked)
+                                (!clicked) ? customDialog.open() :customDialog.close()
+                                 clicked: (!clicked)? true: false
                             }
+                            id: row1
+                            height:70
+
 
                             Text {
                                 x:10
                                 y: parent.y
-                                text: + (+index + 1) + "am"
+                                property var time: (index%12===0)? (12): index%12
+                               property var ap: (index>=12)? "pm": "am"
+
+                                text: time + ap
                                 anchors.verticalCenter: parent.verticalCenter
                                 font.family: "Times New Roman"
                                  font.pointSize: 10.5
@@ -184,14 +190,14 @@ import VPlay 2.0
 
             }
 
-            Rectangle {
+          /*  Rectangle {
                 id: rectangle1
-                x: 21
+                x: 0
                 y: 182
-                width: 433
+                width: 480
                 height: 41
                 color: "#ffffff"
-            }
+            }*/
 
 
 }
