@@ -2,17 +2,20 @@
 #include <VPApplication>
 
 #include <QQmlApplicationEngine>
-
+#include "backend.h"
 
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
     VPApplication vplay;
 
+   
+    qmlRegisterType<BackEnd>("io.qt.examples.backend", 1, 0, "BackEnd");
     // Use platform-specific fonts instead of V-Play's default font
     vplay.setPreservePlatformFonts(true);
 
     QQmlApplicationEngine engine;
+     engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
     vplay.initialize(&engine);
 
     // use this during development

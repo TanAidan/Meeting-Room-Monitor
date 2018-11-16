@@ -53,3 +53,6 @@ macx {
 
 HEADERS += \
     backend.h
+
+DISTFILES += \
+    MeetingData.json

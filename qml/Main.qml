@@ -11,13 +11,13 @@ import io.qt.examples.backend 1.0
         BackEnd {
                id: backend
            }
+
         Page {
             id: page
             width: 480
             height: 950
 
-
-            Text {
+           Text {
                 id: text1
                 x: 154
                 y: 22
