@@ -1,5 +1,6 @@
 #include <QApplication>
 #include <VPApplication>
+#include <QJsonDocument>
 
 #include <QQmlApplicationEngine>
 #include "backend.h"
