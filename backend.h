@@ -22,6 +22,9 @@ signals:
 
 private:
     QString m_userName;
+
+
 };
+//next time add methods and variables for each of the json things and get data to show up
 
 #endif // BACKEND_H

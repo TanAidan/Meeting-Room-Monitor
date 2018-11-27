@@ -30,7 +30,8 @@ RESOURCES += #    resources.qrc # uncomment for publishing
 
 # The .cpp file which was generated for your project. Feel free to hack it.
 SOURCES += main.cpp \
-    backend.cpp
+    backend.cpp \
+    meeting.cpp
 
 android {
     ANDROID_PACKAGE_SOURCE_DIR = $$PWD/android
@@ -52,7 +53,8 @@ macx {
 }
 
 HEADERS += \
-    backend.h
+    backend.h \
+    meeting.h
 
 DISTFILES += \
     MeetingData.json
