@@ -10,7 +10,7 @@ class Meeting: public QObject
 {
    Q_OBJECT
 public:
-    Meeting(QString,QString,QString,QString,QString,bool,QString );
+   explicit Meeting(QString,QString,QString,QString,QString,bool,QString );
     QString getOrganizer();
     QString getSDate();
     QString getSTime();

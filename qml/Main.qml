@@ -4,6 +4,7 @@ import QtQuick.Controls 2.4
 import VPlay 2.0
 import io.qt.examples.backend 1.0
 
+
     App {
         width: 480
         height: 950
