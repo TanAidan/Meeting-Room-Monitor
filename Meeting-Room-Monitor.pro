@@ -32,7 +32,8 @@ RESOURCES += #    resources.qrc # uncomment for publishing
 SOURCES += main.cpp \
     backend.cpp \
     Meeting.cpp \
-    documents.cpp
+    documents.cpp \
+    jsonupdater.cpp
 
 android {
     ANDROID_PACKAGE_SOURCE_DIR = $$PWD/android
@@ -56,7 +57,8 @@ macx {
 HEADERS += \
     backend.h \
     meetingHeader.h \
-    documents.h
+    documents.h \
+    jsonupdater.h
 
 DISTFILES += \
     MeetingData.json

@@ -2,9 +2,9 @@ import VPlayApps 1.0
 import QtQuick 2.0
 import QtQuick.Controls 2.4
 import VPlay 2.0
-import io.qt.examples.backend 1.0
-
-
+import io.qt.examples.backend 1.0 
+//import io.qt.examples.documents 1.0
+//import io.qt.examples.meeting 1.0
     App {
         width: 480
         height: 950
@@ -12,8 +12,13 @@ import io.qt.examples.backend 1.0
         BackEnd {
                id: backend
            }
+       // Documents {
+           //id: documents
+       // }
 
         Page {
+
+
             id: page
             width: 480
             height: 950
@@ -25,6 +30,7 @@ import io.qt.examples.backend 1.0
                 width: 173
                 height: 39
                 text: qsTr("DATE")
+                //text:backend.userName
                 font.family: "Times New Roman"
                 horizontalAlignment: Text.AlignHCenter
                 font.pixelSize: 25
@@ -49,7 +55,10 @@ import io.qt.examples.backend 1.0
                 border.color: "#1fbf17"
                  MouseArea {
                      anchors.fill:parent
-                     onPressed:{ customDialog.open()}
+                     onPressed:{
+                         customDialog.open()
+                    //    documents.readJson()
+                     }
 
                  }
                // function popUp(name){
