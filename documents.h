@@ -4,13 +4,16 @@
 #include <QJsonDocument>
 #include <QObject>
 
-class documents: public QObject
+class Documents: public QObject
 {
 Q_OBJECT
+Q_PROPERTY(QString userName READ userName WRITE setUserName NOTIFY userNameChanged)
+
 public:
-     documents();
+     explicit Documents(QObject *parent = nullptr);
     void readJson();
 
 };
 
 #endif // DOCUMENTS_H
+

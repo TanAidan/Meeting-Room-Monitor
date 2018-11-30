@@ -1,13 +1,17 @@
 #include "documents.h"
 #include <QJsonDocument>
-
 #include <QFile>
- #include <QtDebug>
-documents::documents()
+#include <QtDebug>
+#include <QObject>
+Documents::Documents(QObject *parent):
+
+     QObject(parent)
+
+
 {
 
 }
-void documents::readJson(){
+void Documents::readJson(){
     QString settings;
     QFile file;
     file.setFileName("Meeting-Room-Monitor/MeetingData.json");

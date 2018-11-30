@@ -4,7 +4,7 @@
 
 #include <QObject>
 #include <QString>
-#include <QJsonDocument>
+
 
 class BackEnd : public QObject
 {
