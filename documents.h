@@ -2,15 +2,15 @@
 #define DOCUMENTS_H
 
 #include <QJsonDocument>
-#include <QObject>
+#include <QtCore/QObject>
 
 class Documents: public QObject
 {
-Q_OBJECT
-Q_PROPERTY(QString userName READ userName WRITE setUserName NOTIFY userNameChanged)
+    Q_OBJECT
 
 public:
-     explicit Documents(QObject *parent = nullptr);
+     explicit Documents(QObject *parent =nullptr);
+       ~Documents();
     void readJson();
 
 };

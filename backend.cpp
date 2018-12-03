@@ -4,7 +4,6 @@ BackEnd::BackEnd(QObject *parent) :
     QObject(parent)
 {
 }
-
 QString BackEnd::userName()
 {
     return m_userName;

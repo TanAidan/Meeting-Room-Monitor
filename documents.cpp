@@ -2,15 +2,11 @@
 #include <QJsonDocument>
 #include <QFile>
 #include <QtDebug>
-#include <QObject>
-Documents::Documents(QObject *parent):
 
-     QObject(parent)
-
-
-{
-
-}
+Documents::Documents(QObject* parent):
+ QObject(parent)
+{}
+Documents::~Documents(){}
 void Documents::readJson(){
     QString settings;
     QFile file;
@@ -24,3 +20,4 @@ void Documents::readJson(){
 
 
 }
+

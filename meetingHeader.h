@@ -3,14 +3,15 @@
 
 
 
-#include <QObject>
+#include <QtCore/QObject>
 #include <QString>
 #include <QJsonDocument>
 class Meeting: public QObject
 {
    Q_OBJECT
 public:
-   explicit Meeting(QString,QString,QString,QString,QString,bool,QString );
+   explicit Meeting(QString,QString,QString,QString,QString,bool,QString,QObject *parent =nullptr );
+    ~Meeting();
     QString getOrganizer();
     QString getSDate();
     QString getSTime();
