@@ -1,14 +1,8 @@
-#include "meetingHeader.h"
-  Meeting::Meeting(QString organizer,QString sDate, QString sTime,QString eTSme,QString subject,bool priv,QString description, QObject* parent):
-        this->organizer=organizer
-        this->sDate=sDate
-        this->sTime = sTime
-        this->eTime = eTime
-        this->subject = subject
-        this->priv = priv
-        this->description = description
-          QObject(parent);
-
+#include "meeting.h"
+  Meeting::Meeting(QString organizer1,QString sDate1, QString sTime1,QString eTime1,QString subject1,bool priv1,QString description1, QObject *parent)
+       :organizer(organizer1), sDate(sDate1), sTime(sTime1), eTime(eTime1), subject(subject1), priv(priv1), description(description1), QObject(parent)
+  {}
+    Meeting::~Meeting(){}
     QString Meeting::getOrganizer(){
         return organizer;
 

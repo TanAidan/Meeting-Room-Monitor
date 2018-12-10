@@ -56,9 +56,9 @@ macx {
 
 HEADERS += \
     backend.h \
-    meetingHeader.h \
     documents.h \
-    jsonupdater.h
+    jsonupdater.h \
+    meeting.h
 
 DISTFILES += \
     MeetingData.json
