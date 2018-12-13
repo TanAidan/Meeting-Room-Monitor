@@ -1,4 +1,4 @@
-#ifndef MEETING_H
+/*#ifndef MEETING_H
 #define MEETING_H
 
 
@@ -10,7 +10,7 @@ class Meeting: public QObject
 {
    Q_OBJECT
 public:
-   explicit Meeting(QString,QString,QString,QString,QString,bool,QString,QObject *parent =nullptr );
+   explicit Meeting(QString,QString,QString,QString,QString,QObject *parent =nullptr );
     ~Meeting();
     QString getOrganizer();
     QString getSDate();
@@ -28,7 +28,7 @@ public:
     void setDescription(QString);
     void setPriv(bool);
 
-    void update(QString,QString,QString,QString,QString,bool,QString);
+    void update(QString,QString,QString,QString,QString);
 
 private:
     QString organizer,sDate, sTime, eTime,subject,description;
@@ -37,3 +37,4 @@ private:
 
 
 #endif // MEETING_H
+*/

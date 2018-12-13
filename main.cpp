@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 
    
     qmlRegisterType<BackEnd>("io.qt.examples.backend", 1, 0, "BackEnd");
-  // qmlRegisterType<Meeting>("io.qt.examples.meeting", 1, 0, "Meeting");
+   //qmlRegisterType<Meeting>("io.qt.examples.meeting", 1, 0, "Meeting");
    qmlRegisterType<Documents>("io.qt.examples.documents", 1, 0, "Documents");
     // Use platform-specific fonts instead of V-Play's default font
     vplay.setPreservePlatformFonts(true);

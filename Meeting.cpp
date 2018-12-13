@@ -1,6 +1,6 @@
-#include "meeting.h"
-  Meeting::Meeting(QString organizer1,QString sDate1, QString sTime1,QString eTime1,QString subject1,bool priv1,QString description1, QObject *parent)
-       :organizer(organizer1), sDate(sDate1), sTime(sTime1), eTime(eTime1), subject(subject1), priv(priv1), description(description1), QObject(parent)
+/*#include "meeting.h"
+  Meeting::Meeting(QString organizer1,QString sDate1, QString sTime1,QString eTime1,QString subject1, QObject *parent)
+       :organizer(organizer1), sDate(sDate1), sTime(sTime1), eTime(eTime1), subject(subject1), QObject(parent)
   {}
     Meeting::~Meeting(){}
     QString Meeting::getOrganizer(){
@@ -72,13 +72,8 @@
     {
         this->priv=priv;
     }
-    void Meeting::update(QString organizer,QString sDate, QString sTime,QString eTime,QString subject,bool priv,QString description)
+    void Meeting::update(QString organizer1,QString sDate1, QString sTime1,QString eTime1,QString subject1)
     {
-        this->organizer=organizer;
-        this->sDate=sDate;
-        this->sTime = sTime;
-        this->eTime = eTime;
-        this->subject = subject;
-        this->priv = priv;
-        this->description = description;
+        :organizer(organizer1), sDate(sDate1), sTime(sTime1), eTime(eTime1), subject(subject1), priv(priv1), description(description1)
     };
+*/

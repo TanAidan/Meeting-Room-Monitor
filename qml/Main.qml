@@ -2,7 +2,7 @@ import VPlayApps 1.0
 import QtQuick 2.0
 import QtQuick.Controls 2.4
 import VPlay 2.0
-import io.qt.examples.backend 1.0 
+import io.qt.examples.backend 1.0
 //import io.qt.examples.documents 1.0
 //import io.qt.examples.meeting 1.0
     App {
@@ -84,14 +84,6 @@ import io.qt.examples.backend 1.0
                     verticalAlignment: Text.AlignVCenter
                     horizontalAlignment: Text.AlignLeft
                     font.pixelSize: 16
-
-                    CheckDelegate {
-                        id: checkDelegate
-                        x: 297
-                        y: 0
-                        width: 70
-                        height: 28
-                    }
                 }
 
 
@@ -101,7 +93,7 @@ import io.qt.examples.backend 1.0
                     y: 35
                     width: 219
                     height: 28
-                    text: qsTr("Time")
+                    text: qsTr("Start Time")
                     font.family: "Times New Roman"
                     font.pixelSize: 16
                     horizontalAlignment: Text.AlignLeft
@@ -114,7 +106,7 @@ import io.qt.examples.backend 1.0
                     y: 57
                     width: 219
                     height: 28
-                    text: qsTr("Description of Meeting")
+                    text: qsTr("End Time")
                     font.family: "Times New Roman"
                     font.pixelSize: 16
                     horizontalAlignment: Text.AlignLeft
@@ -134,21 +126,22 @@ import io.qt.examples.backend 1.0
                 Image {
                     id: image1
                     x: 8
-                    y: 35
+                    y: 33
                     width: 31
-                    height: 22
+                    height: 28
+                    sourceSize.width: 0
                     fillMode: Image.PreserveAspectFit
-                    source: "../../../Pictures/download.png"
+                    source: "../../../Pictures/clock_time_stop_sport_start_measure_timer-512.png"
                 }
 
                 Image {
                     id: image2
                     x: 8
-                    y: 57
+                    y: 60
                     width: 31
-                    height: 28
+                    height: 25
                     fillMode: Image.PreserveAspectFit
-                    source: "../../../Pictures/6169-200.png"
+                    source: "../../../Pictures/time_start-512.png"
                 }
             }
 
